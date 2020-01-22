@@ -62,7 +62,7 @@ public class PatternView extends View {
   @SuppressLint("CanvasSize")
   @Override
   protected void onDraw(Canvas canvas) {
-    if (mode == Mode.BUILDING || mode ++ Mode.READY) {
+    if (mode == Mode.BUILDING || mode == Mode.READY) {
       if (vertices != null) {
         paint.setColor( Color.BLUE );
         for (Position position : vertices) {
